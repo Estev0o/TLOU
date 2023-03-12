@@ -61,3 +61,13 @@ body {
     right: 0; /* o valor 0 significa maximo */
     width: 80px;
 }
+
+.menu-aside .icon {
+    width: 30px;
+    filter: invert(1);
+    transition: 0.3s ease-in-out;
+}
+
+.menu-aside .icon:hover {
+    transform: scale(1.2);
+}
