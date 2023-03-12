@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
     --white: #fff;
@@ -18,7 +18,7 @@ main:after {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,1) 90%);
+    background-color: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 90%);
     z-index: -1;
 }
 
@@ -27,10 +27,6 @@ main:after {
     flex-direction: column;
     justify-content: space-evenly;
     min-height: 100vh;
-}
-
-.info {
-
 }
 
 .info .logo {
@@ -46,7 +42,7 @@ main:after {
     line-height: 30px;
 }
 
-.btn-carrosel{
+.btn-carrosel {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -58,7 +54,7 @@ main:after {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 2px solid transparent var(--white);
+    border: 2px solid var(--white);
     cursor: pointer;
 }
 
@@ -68,8 +64,10 @@ main:after {
 
 .menu-aside {
     position: fixed;
-    top: 0;  /* o valor 0 significa maximo */
-    right: 0; /* o valor 0 significa maximo */
+    top: 0;
+    /* o valor 0 significa maximo */
+    right: 0;
+    /* o valor 0 significa maximo */
     width: 80px;
     display: flex;
     flex-direction: row;
@@ -123,4 +121,3 @@ main:after {
 .carrosel .img.ative {
     display: block;
 }
-
