@@ -26,17 +26,33 @@
 const btnCarrosel = document.querySelectorAll('.btn');
 const imgs = document.querySelectorAll('.img');
 
-btnCarrosel.forEach((btn,indice) => {
+btnCarrosel.forEach((btn, indice) => {
     btn.addEventListener('click', () => {
-        const btnSelect = document.querySelector('.select');
-        btnSelect.classList.remove('select');
 
-        btn.classList.add('select');
+        turoffBtn();
 
-        const imgAtive = document.querySelector('.ative');
-        imgAtive.classList.remove('ative');
+        selectCarossel(btn);
 
-        imgs[indice].classList.add('ative');
+        turonImgs();
+
+        showImgs(indice);
     })
 });
 
+function turoffBtn() {
+    const btnSelect = document.querySelector('.select');
+    btnSelect.classList.remove('select');
+}
+
+function selectCarossel(btn) {
+    btn.classList.add('select');
+}
+
+function turonImgs() {
+    const imgAtive = document.querySelector('.ative');
+    imgAtive.classList.remove('ative');
+}
+
+function showImgs(indice) {
+    imgs[indice].classList.add('ative');
+}
