@@ -8,7 +8,7 @@ body {
 
 .content {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: space-evenly;
     min-height: 100vh;
 }
@@ -28,4 +28,19 @@ body {
     font-size: 1.5em;
     color: #fff;
     line-height: 30px;
+}
+
+.btn-carrosel{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-carrosel .btn {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent   ;
 }
