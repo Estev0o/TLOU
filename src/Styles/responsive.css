@@ -18,3 +18,35 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 425px){
+
+    body {
+        padding: 10%;
+    }
+
+    .info .logo{
+        max-width: 100%;
+    }
+    
+
+    .info .description {
+        width: 100%;
+    }
+
+    .menu-aside {
+        position: static;
+        min-height: auto;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .menu-aside ul {
+        flex-direction: row;
+    }
+
+    .content {
+        min-height: 70vh;
+        gap: 50px;
+    }
+}
