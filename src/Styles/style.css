@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 
+:root {
+    --white: #fff;
+    --btn-coler-select: #1d8346;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     max-width: 1280px;
@@ -26,7 +31,7 @@ body {
 .description {
     width: 50%;
     font-size: 1.5em;
-    color: #fff;
+    color: var(--white);
     line-height: 30px;
 }
 
@@ -38,9 +43,14 @@ body {
 }
 
 .btn-carrosel .btn {
-    background-color: #fff;
+    background-color: var(--white);
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 2px solid transparent   ;
+    border: 2px solid transparent var(--white);
+    cursor: pointer;
+}
+
+.btn-carrosel .btn.select {
+    background-color: var(--btn-coler-select);
 }
