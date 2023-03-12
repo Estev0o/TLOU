@@ -1,4 +1,4 @@
-const btnCarrosel = document.querySelectorAll('.btn');
+
 
 // const btn1 = document.addEventListener('click', () => {
 
@@ -23,8 +23,10 @@ const btnCarrosel = document.querySelectorAll('.btn');
 // const btn6 = documnt.addEvenListener('click', () => {
 
 // });
+const btnCarrosel = document.querySelectorAll('.btn');
+const imgs = document.querySelectorAll('.img');
 
-btnCarrosel.forEach((btn) => {
+btnCarrosel.forEach((btn,indice) => {
     btn.addEventListener('click', () => {
         const btnSelect = document.querySelector('.select');
         btnSelect.classList.remove('select');
@@ -34,6 +36,7 @@ btnCarrosel.forEach((btn) => {
         const imgAtive = document.querySelector('.ative');
         imgAtive.classList.remove('ative');
 
+        imgs[indice].classList.add('ative');
     })
 });
 
