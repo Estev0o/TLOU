@@ -1,4 +1,4 @@
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1280px) {
 
     body {
         padding: 0 8%;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+
     .info {
         display: flex;
         flex-direction: column;
@@ -19,16 +19,16 @@
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
 
     body {
         padding: 10%;
     }
 
-    .info .logo{
+    .info .logo {
         max-width: 100%;
     }
-    
+
 
     .info .description {
         width: 100%;
