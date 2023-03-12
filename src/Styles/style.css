@@ -13,7 +13,7 @@ body {
 
 .content {
     display: flex;
-    flex-flow: column;
+    flex-direction: row;
     justify-content: space-evenly;
     min-height: 100vh;
 }
@@ -37,7 +37,7 @@ body {
 
 .btn-carrosel{
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
     justify-content: center;
     gap: 20px;
 }
@@ -60,12 +60,23 @@ body {
     top: 0;  /* o valor 0 significa maximo */
     right: 0; /* o valor 0 significa maximo */
     width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .menu-aside .icon {
     width: 30px;
     filter: invert(1);
     transition: 0.3s ease-in-out;
+}
+
+.menu-aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .menu-aside .icon:hover {
