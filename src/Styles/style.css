@@ -54,3 +54,10 @@ body {
 .btn-carrosel .btn.select {
     background-color: var(--btn-coler-select);
 }
+
+.menu-aside {
+    position: fixed;
+    top: 0;  /* o valor 0 significa maximo */
+    right: 0; /* o valor 0 significa maximo */
+    width: 80px;
+}
