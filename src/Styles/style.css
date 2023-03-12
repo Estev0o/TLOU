@@ -12,3 +12,17 @@ body {
     justify-content: space-evenly;
     min-height: 100vh;
 }
+
+.info {
+
+}
+
+.info .logo {
+    max-width: 350px;
+    filter: invert(1);
+    margin-bottom: 7%;
+}
+
+.description {
+    width: 50%;
+}
